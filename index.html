@@ -13,6 +13,7 @@
 		<h1 class="brand">there4u</h1>
 		<button id="getNext" class="ui right floated large black button custom-right">Next</button>
 		<br><br>
+		<h1 id="Loading"></h1>
 		<div id="showTweet" class="ui padded raised segment">
 			<!-- <h2>@nisargap</h2>
 			<p class="tweet-text">
@@ -37,6 +38,8 @@
     	function getRandomTweet(){
     		$.get("http://52.88.105.123/getTweetId", function(data){
 
+
+    			$("#Loading").html("<h3>Loading a tweet for you...</h3>");
     			console.log(data);
     			var url="https%3A%2F%2Ftwitter.com%2FInterior%2Fstatus%2F"+data.id_str;
     			$.ajax({
@@ -52,6 +55,7 @@
 
 	    				$("#showTweet").html(data_html);
 	    				console.log("Worked!");
+	    				$("#Loading").html("");
 		            }
     			
     			});
