@@ -79,7 +79,7 @@
 	    				author_screen = author_url.split("/")
 
 	    				author_screen = author_screen[author_screen.length - 1]
-	    				
+
 	    				console.log(author_screen);
 	    				var tweet_url = tweet_data.url;
 
@@ -108,8 +108,7 @@
 
     	respond.click(function(){
     		var tweet_text = $("#responseText").val();
-    		console.log(author_screen);
-    		$.get("http://52.88.105.123/send_tweet", {id : g_id_str, username : author_screen, text : tweet_text}, function(data){
+    		$.get("http://52.88.105.123/sendTweet", {id : g_id_str, username : author_screen, text : tweet_text}, function(data){
 
     			console.log("Sent tweet to @" + author_screen);
     			g_id_str = "";
