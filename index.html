@@ -77,6 +77,9 @@
 		                var author = tweet_data.author;
 	    				var author_url = tweet_data.author_url;
 	    				author_screen = author_url.split("/")
+
+	    				author_screen = author_screen[author_screen.length - 1]
+	    				
 	    				console.log(author_screen);
 	    				var tweet_url = tweet_data.url;
 
