@@ -36,10 +36,8 @@
     <script>
 
     	function getRandomTweet(){
+    		$("#Loading").html("<h3>Loading a tweet for you...</h3>");
     		$.get("http://52.88.105.123/getTweetId", function(data){
-
-
-    			$("#Loading").html("<h3>Loading a tweet for you...</h3>");
     			console.log(data);
     			var url="https%3A%2F%2Ftwitter.com%2FInterior%2Fstatus%2F"+data.id_str;
     			$.ajax({
