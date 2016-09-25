@@ -1,0 +1,32 @@
+@import 'https://fonts.googleapis.com/css?family=Cedarville+Cursive';
+
+body {
+	background: #0375B4;
+}
+.brand {
+	font-family: 'Cedarville Cursive', cursive;
+	margin: 0 auto;
+	margin-top: 2% !important;
+	text-align:center;
+	color: #ffce00;
+	font-size: 10em !important;
+}
+.custom {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.tweet-text {
+	font-size: 2em;
+	font-style: italic;
+	color: #777;
+}
+.reply-style {
+	opacity: 0.5;
+	color: #f0f0f0;
+	font-size: 3em !important;
+}
+.custom-ta {
+	font-size: 1.5em !important;
+	color: #444;
+}
