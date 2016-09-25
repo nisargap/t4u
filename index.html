@@ -73,7 +73,7 @@
 		            url: "https://api.twitter.com/1/statuses/oembed.json?url="+url,
 		            dataType: "jsonp",
 		            success: function(tweet_data){
-		                
+		                console.log(tweet_data);
 		                var author = tweet_data.author;
 	    				var author_url = tweet_data.author_url;
 	    				author_screen = author_url.split("/")
